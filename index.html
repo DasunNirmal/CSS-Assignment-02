@@ -2,300 +2,218 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Case 02</title>
+    <title>Case 01</title>
     <link rel="stylesheet" href="assets/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
 
     <style>
 
-        header {
-            background-color: lightblue;
-            position: relative;
-            width: 100vw;
+        #div1 {
+            width: 50vw;
+            height: 50vh;
+            background-color: red;
+            position: absolute;
+        }
+        #div2 {
+            width: 50vw;
+            height: 50vh;
+            background-color: green;
+            position: absolute;
+
+            right: 0;
+        }
+        #div3 {
+            width: 50vw;
+            height: 50vh;
+            background-color: deeppink;
+            position: absolute;
+
+            bottom: 0;
+            right: 0;
+        }
+        #div4 {
+            width: 50vw;
+            height: 50vh;
+            background-color: orange;
+            position: absolute;
+
+            bottom: 0;
+            left: 0;
+        }
+
+        .sub-circle {
+            width: 150px;
+            aspect-ratio: 1/1;
+            background-color: white;
+            border-radius: 100px;
+            position: absolute;
+
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }
+        .red-box {
+            width: 60px;
+            aspect-ratio: 1/1;
+            background-color: red;
+            position: absolute;
+
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        #main {
+            width: 150px;
+            aspect-ratio: 1/1;
+            background-color: white;
+            position: absolute;
+
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }
+        #main_circle {
+            width: 100px;
+            aspect-ratio: 1/1;
+            background-color: red;
+            border-radius: 100px;
+            position: absolute;
+
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        #half-circle-bottom {
+            width: 120px;
             height: 60px;
-            /*padding: 10px;*/
-            /*box-sizing: border-box;*/
-        }
-
-        header>img {
+            background-color: white;
+            border-radius: 10rem 10rem 0 0;
             position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 10px;
-            margin: auto;
-        }
 
-        header>nav {
-            height: fit-content;
-            position: absolute;
-            right: 10px;
-            top: 0;
+            left: 0;
+            right: 0;
             bottom: 0;
             margin: auto;
         }
-
-        header>nav>ul {
-            padding: 0;
-            margin: 0;
-        }
-
-        header>nav>ul>li {
-            display: inline-block;
-        }
-
-        main>aside {
-            background-color: mediumpurple;
-            color: white;
-            width: 250px;
-            padding: 10px;
+        #half-circle-top {
+            width: 120px;
+            height: 60px;
+            background-color: white;
+            border-radius: 0 0 10rem 10rem;
             position: absolute;
+
+            left: 0;
+            right: 0;
+            margin: auto;
         }
 
-        main>aside>ul {
-            margin: 0;
-            list-style: none;
-        }
-
-        main>section {
-            background-color: lightgoldenrodyellow;
+        #circle-top-left {
+            width: 80px;
+            height: 80px;
+            background-color: white;
+            border-radius: 0 0 15rem 0;
             position: absolute;
-            width: calc(100vw - 250px);
+
+            left: 0;
+        }
+        #circle-top-right {
+            width: 80px;
+            height: 80px;
+            background-color: white;
+            border-radius: 0 0 0 15rem;
+            position: absolute;
+
             right: 0;
         }
 
-        main {
-            position: relative;
+        #circle-bottom-left {
+            width: 80px;
+            height: 80px;
+            background-color: white;
+            border-radius: 0 15rem 0 0;
+            position: absolute;
+
+            bottom: 0;
+            left: 0;
         }
+        #circle-bottom-right {
+            width: 80px;
+            height: 80px;
+            background-color: white;
+            border-radius: 15rem 0 0 0;
+            position: absolute;
 
-        footer {
-            background-color: darkgray;
-            text-align: center;
-            color: white;
-            padding-top: 20px;
-            padding-bottom: 20px;
-
+            bottom: 0;
+            right: 0;
         }
 
     </style>
 
 </head>
     <body>
-        <!--Page Header-->
-        <header>
-            <img src="assets/ijse.png" title="ijse.lk" alt="ijse logo" width="150">
-            <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>Service</li>
-                    <li>Contact</li>
-                    <li>About Us</li>
-                </ul>
-            </nav>
-        </header>
 
-        <!--Main section-->
-        <main>
-            <!--Side Bar-->
-            <aside>
-                <ul>
-                    <li>Home</li>
-                    <li>Service</li>
-                    <li>Contact</li>
-                    <li>About Us</li>
-                </ul>
-            </aside>
+        <!--Red Color div-->
+        <div id="div1">
+            <div class="sub-circle">
+                <div class="red-box"></div>
+            </div>
+        </div>
 
-            <!--Content-->
-            <section>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.
-                </p>
+        <!--Green Color div-->
+        <div id="div2">
+            <div class="sub-circle">
+                <div class="red-box"></div>
+            </div>
+        </div>
 
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.
-                </p>
+        <!--Deeppink Color div-->
+        <div id="div3">
+            <div class="sub-circle">
+                <div class="red-box"></div>
+            </div>
+        </div>
 
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.
-                </p>
+        <!--Orange Color div-->
+        <div id="div4">
+            <div class="sub-circle">
+                <div class="red-box"></div>
+            </div>
+        </div>
 
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.
-                </p>
+        <!--Center div-->
+        <div id="main">
+            <div id="main_circle"></div>
+        </div>
 
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.
-                </p>
+        <!--Bottom 180 degrees Circle-->
+        <div id="half-circle-bottom"></div>
 
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate
-                    earum eveniet minima, molestiae natus nihil odit omnis, optio perferendis quae quasi quo quod
-                    reiciendis rerum saepe sequi tenetur ullam.
-                </p>
-            </section>
-        </main>
+        <!--Top 180 degrees Circle-->
+        <div id="half-circle-top"></div>
 
-        <!--Page Footer-->
-        <footer>
-            Developed By IJSE
-        </footer>
+        <!--90 degrees Circle Top Left-->
+        <div id="circle-top-left"></div>
+
+        <!--90 degrees Circle Top Right-->
+        <div id="circle-top-right"></div>
+
+        <!--90 degrees Circle Bottom Left-->
+        <div id="circle-bottom-left"></div>
+
+        <!--90 degrees Circle Bottom Right-->
+        <div id="circle-bottom-right"></div>
 
     </body>
 </html>
